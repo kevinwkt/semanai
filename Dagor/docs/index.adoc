@@ -1,0 +1,835 @@
+= Reto IA con juegos de estrategia
+:author: Ariel Ortiz Ramírez
+:email: ariel.ortiz@itesm.mx
+:revdate: 6 de octubre, 2016.
+:encoding: utf-8
+:source-highlighter: pygments
+:icons: font
+:pygments-style: manni
+:toclevels: 4
+:toc-title: Tabla de contenido
+:table-caption: Tabla
+:last-update-label: Última actualización:
+:toc: left
+:numbered:
+:data-uri:
+
+image::semanai.png[]
+
+== Generalidades
+
+Esta es la página web oficial del reto titulado **“Introducción a la inteligencia artificial (IA) orientada al diseño y programación de juegos de estrategia”** de la semana-i 2016 del Tecnológico de Monterrey, Campus Estado de México.
+
+=== Responsables
+
+- Profesor Ariel Ortiz Ramírez +
+  ariel.ortiz@itesm.mx
+
+- Profesor Roberto Martínez Roman +
+  rmroman@itesm.mx
+
+=== Objetivo
+
+Los alumnos del primer tercio de las carreras de ISC e ISDR aplicarán sus conocimientos de resolución de problemas y pensamiento algorítmico para diseñar e implementar programas en el lenguaje Python que utilicen técnicas sencillas de inteligencia artificial con el fin de competir en un torneo de juegos de estrategia.
+
+=== Descripción
+
+Durante este reto:
+
+- Los alumnos participarán en una competencia de programación por equipos para afinar sus habilidades de resolución de problemas.
+- Los alumnos recibirán una capacitación sobre teoría de juegos y técnicas sencillas de inteligencia artificial para juegos de estrategia.
+- Los alumnos, en equipos de dos o tres personas, implementarán en Python programas que jugarán de manera autónoma contra los elaborados por los otros equipos.
+- Se organizará un torneo para determinar cuáles son los programas con las mejores estrategias.
+- Los alumnos recibirán una plática sobre el impacto que tienen los sistemas con algoritmos inteligentes en un proyecto de la vida real.
+- Los alumnos verán una película de ciencia ficción que toque el tema de la inteligencia artificial y además contenga un dilema de tipo moral. Esto permitirá abrir un espacio para discutir y reflexionar sobre la ética del impacto que pueden llegar a tener los sistemas inteligentes en nuestro mundo.
+- Los alumnos documentarán los logros y experiencias obtenidas en el reto utilizando un blog.
+
+=== Agenda
+
+A continuación se presenta la agenda para el reto durante la semana del 26 al 30 de septiembre de 2016. Esta agenda está sujeta a cambios. Favor de revisar el grupo de https://www.facebook.com/groups/306301596415703/[facebook] para conocer cualquier cambio de último momento.
+
+.Agenda del reto para la semana-i
+[cols="^.^2,5*^.^3", options="header", grid="rows", frame="topbot"]
+|===
+|
+|Lunes +
+26
+|Martes +
+27
+|Miércoles +
+28
+|Jueves +
+29
+|Viernes +
+30
+
+|9:00-10:00
+| Inauguración del reto ¶
+.3+| Taller: _Framework_ Dagor para juegos de estrategia §
+.2+| Revisión de avance de proyecto §
+.3+| Torneo de estrategias §
+| Conferencia magistral ¶
+
+|10:00-11:00
+| Taller: Preparación para el concurso de programación §
+.3+| Película de ciencia ficción y reflexión ética ¶
+
+|11:00-12:00
+.3+| Concurso de programación §
+.3+| Desarrollo de proyecto y asesoría §
+
+|12:00-13:00
+.2+| Desarrollo de proyecto y asesoría §
+| Presentación de resultados del torneo ¶
+
+|13:00-14:00
+| Revisiones y aclaraciones post-torneo §
+| Clausura del reto¶
+|===
+
+**Lugares de reunión:**
+
+- ¶: Salón de congresos, sala A
+- §: Salones 5301 y 5302
+
+=== Evaluación
+
+Te recordamos que el 5% de la calificación final de cada materia que tienes inscrita durante este semestre está ligada a los resultados que obtengas en la evaluación de tu semana-i.
+
+Nuestro reto será evaluado de la siguiente manera:
+
+.Ponderaciones para la evaluación del reto
+[cols=">.^2, ^.^1s, 6", options="header"]
+|===
+^| Concepto
+^| Porcentaje
+^| Notas
+
+| Concurso de programación
+| 15%
+a| Los puntos porcentuales otorgados dependerán del percentil en el que se coloque cada equipo como resultado de su participación en el concurso de programación:
+
+* 0: si algún equipo no participó o fue descalificado
+* 8: para equipos en el percentil 0-24
+* 10: para equipos en el percentil 25-49
+* 13: para equipos en el percentil 50-74
+* 15: para equipos en el percentil 75-100
+
+| Torneo de estrategias
+| 60%
+a| Los puntos porcentuales otorgados dependerán del percentil en el que se coloque cada equipo como resultado de su participación en el torneo de estrategias:
+
+* 0: si algún equipo no participó o fue descalificado
+* 30: para equipos en el percentil 0-24
+* 40: para equipos en el percentil 25-49
+* 50: para equipos en el percentil 50-74
+* 60: para equipos en el percentil 75-100
+
+| Blog
+| 25%
+| Durante la semana cada equipo irá documentando en un blog las experiencias y logros obtenidos.
+
+h| Total
+h| 100%
+|
+|===
+
+=== Publicación de calificaciones
+
+Cada alumno puede consultar su calificación final del reto en la siguiente liga:
+
+- http://webcem01.cem.itesm.mx:8005/s201613/semana_i/calificaciones.html[Consulta de calificaciones]
+
+=== Grupo de facebook
+
+Durante todo el reto estaremos usando un grupo de facebook para dar anuncios, publicar fotos, etc. Si aún no lo has hecho, es indispensable que solicites cuanto antes unirte a dicho grupo:
+
+- https://www.facebook.com/groups/306301596415703/[Reto IA con juegos de estrategia (Semana-i 2016)]
+
+== Blog
+
+Tal como ya se mencionó anteriormente, durante la semana cada equipo irá documentando en un blog las experiencias y logros obtenidos. Esta actividad constituye la cuarta parte de la calificación de este reto.
+
+=== Consideraciones generales
+
+Estos son los puntos que deben consider como equipo:
+
+- El blog se debe crear en el sitio de http://blogger.com[blogger.com] y debe ser exclusivo para el reto. Para esto se requiere que todos los miembros del equipo cuenten con una cuenta de http://accounts.google.com/[Google]. En la configuración básica del blog deben darse de alta como autores todos los integrantes del equipo.
+- En cuanto hayan creado su blog deberán compartir el URL correspondiente en el https://www.facebook.com/groups/306301596415703/[grupo de facebook] del reto.
+- Cada entrada del blog debe tener al menos **300 palabras**.
+- Algunas entradas serán *individuales* y otras serán en *equipo*.
+- Los temas de las entradas se irán detallando en la siguiente sección conforme avance la semana.
+
+=== Fechas de publicación
+
+.Temas para las entradas del blog
+[cols="^.^1,^.^2,^.^2,^.^2,<.^6", options="header"]
+|====
+| Entrada #
+| Fecha límite de publicación
+| Tema
+| Entrada individual o en equipo
+^| Descripción
+
+| 1
+| Lunes 26 de septiembre
+e| Presentación personal
+| Individual
+a| Cada integrante del equipo se presentará ante el resto de sus compañeros de este reto de la semana-i. Algunas de las cosas de las que pueden escribir incluyen:
+
+- Expectativas que tienen de esta semana-i.
+- Pasatiempos e intereses personales.
+- Libros, música, películas, programas de televisión, etc. que hayan recientemente disfrutado.
+- Etcétera.
+
+| 2
+| Lunes 26 de septiembre
+e| Concurso de programación
+| Equipo
+a| El equipo comentará sobre su experiencia durante el concurso de programación del día lunes. Los elementos que pueden tratar en su entrada son:
+
+- Qué problemas se les hicieron más fáciles y/o más difíciles.
+- Qué fue lo que más les gustó y/o disgustó del concurso.
+- Qué aspectos o técnicas de programación necesitan mejorar o conocer más a fondo.
+- Qué otros aprendizajes obtuvieron de esta actividad.
+- Etcétera.
+
+| 3
+| Martes 27 de septiembre
+e| Teoría de juegos
+| Equipo
+a| Investiguen brevemente sobre el concepto de teoría de juegos y su relevancia en la ciencia de la computación. Relacionen sus hallazgos con lo que aprendieron el día de hoy en el taller “_Framework_ Dagor para juegos de estrategia”.
+
+Comenten también sobre algunos de los siguientes aspectos:
+
+- ¿Qué fue lo que más les gustó del taller de hoy?
+- ¿Qué fue lo que menos les gustó?
+- ¿Qué dificultades vislumbran en este momento sobre la elaboración de su proyecto del jugador estratégico para el juego de Orugas?
+
+No olviden citar correctamente todos los recursos consultados.
+
+| 4
+| Miércoles 28 de septiembre
+e| Programando un jugador estratégico
+| Equipo
+a| En este entrada el equipo comentará sus reflexiones sobre el proceso de diseño e implementación de su proyecto de jugador estratégico para el juego de Orugas.
+
+Pueden comentar sobre:
+
+- La descripción general de sus estrategias (recuerden que su blog es público, tienen todo el derecho de reservarse esta información si así lo desean).
+- Las dificultades a las que se han afrontado, y cómo las han resuelto.
+- Qué ha sido lo que más les has gustado y/o disgustado del proyecto.
+- Qué resultados anticipan para el torneo de estrategias del día de mañana.
+- Etcétera.
+
+| 5
+| Jueves 29 de septiembre
+e| El torneo de estrategias
+| Equipo
+a| Cada equipo comentará sus experiencias y aprendizajes sobre la fase final de implementación de su jugador estratégico, así como también los resultados que obtuvieron en el torneo. ¿Qué hubieran hecho diferente si hubieran tenido más tiempo para desarrollar su proyecto? Pueden también comentar sobre lo que les gustó y/o disgustó del torneo en sí.
+
+| 6
+| Viernes 30 de septiembre
+e| Ex Machina
+| Equipo
+a| Por equipo, coloquen sus conclusiones sobre las preguntas en la hoja de discusión ética de la película “Ex Machina”. 
+
+Reproducimos aquí las preguntas:
+
+
+1. _Is Nathan a reliable or unreliable narrator of his own motives and story?  What can we say with certainty that we know about him or his actions in the film?_
+2. _Does Caleb ever do anything we would consider truly unethical? Does he “deserve” his end?_
+3. _Speaking of the ending – how many legitimate storylines can you draft for the final scenes in the film? (“Legitimate” means the words and actions on screen as well as the previous scenes can support the storyline you suggest without breaking people’s expectations for story structure, honesty, or common sense.)_
+4. _Do you think there are any plot holes in the film?_
+5. _Before Ava “puts on” the skin of the other robots, do you think she passes the Turing Test? In other words, is her sentience/conscious awareness enough to allow her to exist with humans, or must she also take on the form of humanity?_
+6. _Kyoko is a disturbing character to watch. What do her interactions with the other characters show us about Nathan, Caleb, and Ava? And about herself?_
+7. _If you say it fast enough, Bluebook sounds a lot like Google. The similarities were thinly veiled. What does the film say to us about the dangers of our technophilic world?_
+
+Estas pregunas fueron tomadas del sitio https://rameylady.com/2015/05/03/discussion-ideas-for-ex-machina/[Just:Words] de RameyLady.
+
+| 7
+| Viernes 30 de septiembre
+e| Cierre del reto
+| Individual
+a| De manera individual, cada integrante del equipo realizará su conclusión personal sobre el este reto. 
+
+Pueden incluir en su entrada:
+
+- ¿Qué aprendizajes personales se llevan del reto?
+- ¿Qué recomendaciones le harían a un amigo que quisiera llevar este reto en un futuro?
+- ¿Qué actividad les gustó más del reto?
+- ¿Qué actividad les gustó menos?
+- ¿Qué cambios le harían a este reto para mejorarlo?
+- Etcétera
+
+|====
+
+=== Listado de blogs
+
+A continuación se enlistan todos los blogs de los equipos por orden alfabético:
+
+- http://asteriagame.blogspot.mx/[asteria]
+- http://authentic5774.blogspot.mx/[authentic]
+- http://blogprograia.blogspot.mx/[binary]
+- http://compilers1.blogspot.mx/[compilers]
+- http://cortana-semana-i.blogspot.mx/[cortana]
+- http://inteligenciaartificialsemanai.blogspot.mx/[des]
+- http://emu8086itesm.blogspot.mx/[emu8086]
+- http://fsociety10.blogspot.mx/[fsociety]
+- http://g14d05.blogspot.mx/[g14d05]
+- http://gokaigerblog.blogspot.mx/[gokaiger]
+- http://kysersant.blogspot.mx/[kysersant]
+- http://naahal.blogspot.mx/[naahal]
+- http://nokygerand.blogspot.mx/[nokygerand]
+- http://nomelasoft.blogspot.mx/[nomelase]
+- http://nullsoftsemanai.blogspot.mx/[nullsoft]
+- https://obctsemanai.blogspot.mx/[obct]
+- http://pyfiction.blogspot.mx/[pyfiction]
+- http://semanaipyhunters.blogspot.mx/[pyhunters]
+- http://therebelcoder.blogspot.mx/[rebelcoder]
+- http://rezerosemanai.blogspot.mx/[rezero]
+
+== Concurso de programación
+
+=== Reglas del concurso
+
+- El concurso tiene una duración de tres horas y se efectuará el lunes 26 de septiembre de 11:00 a 14:00 hrs. en los salones designados.
+
+- El concurso es por equipos. Cada equipo estará conformado por dos o tres integrantes.
+
+- Los equipos recibirán oportunamente un _login_ y _password_ para acceder al sitio del concurso (https://omegaup.com/arena/TEC_CEM_SEMANA_I_2016/[omegaup.com]). No se podrá utilizar ninguna otra cuenta de este sitio para ingresar a la competencia.
+
+- Cada equipo, sin importar el número de integrantes, podrá utilizar hasta dos computadoras: una para programar y enviar las soluciones, y la otra para revisar la documentación.
+
+- El concurso consiste de siete problemas. Cada problema, por su nivel de dificultad, tiene un cierto valor en puntos: 100 o 200.
+
+- Los problemas deberán resolverse usando exclusivamente Python 2.7. No tendrán valor los problemas que sean resueltos usando algún otro lenguaje de programación.
+
+- Al enviar un problema al sitio del concurso, el juez en línea lo revisará inmediatamente e indicará su dictamen en la columna de status:
+
+    * *AC – Accepted.* Su envío resolvió correctamente todos los casos de prueba y obtuvieron la máxima cantidad de puntos. ¡Felicidades!
+    * *PA – Partially Accepted.* Su envío resolvió al menos un caso de prueba, pero hay al menos un caso que no resolvieron correctamente. Intenten arreglar su programa y vuélvanlo a intentar.
+    * *WA – Wrong Answer.* Su programa no resolvió ningún caso correctamente.
+    * *TLE – Time Limit Exceeded.* Al menos en uno de los casos, su programa excedió el límite de tiempo. Intenten pensar en una solución más eficiente o busquen en su código si hay algún ciclo infinito.
+    * *MLE – Memory Limit Exceeded.* Al menos en uno de los casos, su programa excedió el límite de memoria. Intenten pensar en una solución que utilice menos memoria.
+    * *RTE – Runtime error.* En al menos uno de los casos, su programa tuvo un error fatal: puede ser una excepción, divisiones entre cero, desbordaron el stack, se salieron de los límites de un arreglo, etc. Vuelvan a leer el problema y piensen qué casos se les olvidó considerar y qué entrada puede hacer que su programa se comporte de esta manera.
+    * *RFE – Restricted function.* En al menos uno de los casos, su programa intentó realizar una operación prohibida. En general, no pueden abrir ningún archivo, no pueden conectarse a internet, no pueden ejecutar otros programas y no pueden comunicarse con nada del sistema fuera del problema. Limítense a resolver el problema usando algoritmos.
+
+- Cuando envíen una solución que resulte rechazada, deberán esperar al menos un minuto antes de poder enviar una versión corregida.
+
+- El lugar que cada equipo obtendrá en el concurso se determinará por la suma de los puntos de los problemas que resuelvan correctamente. La máxima puntuación que puede obtener un equipo es 1,000.
+
+- Si al final del concurso dos o más equipos tienen la misma puntuación, se usa como criterio de desempate la suma del tiempo de resolución de los problemas aceptados. Por ejemplo, supongamos que el equipo A ha enviado sus soluciones para dos problemas en los minutos 60 y 120 desde el inicio del concurso, y otro equipo B ha resuelto los mismos problemas en los minutos 80 y 90. El desempate entre ambos equipos se haría viendo los tiempos, para el equipo A: 60 + 120 = 180 minutos; para el equipo B: 80 + 90 = 170 minutos. En este caso el equipo B ganaría.
++
+El tiempo que se toma para los desempates es el tiempo que ha pasado desde el inicio del concurso más 20 minutos por cada solución incorrecta enviada. En el ejemplo anterior, si el equipo A hubiera enviado 2 soluciones incorrectas para su primer problema, su tiempo final sería: 20 + 20 + 60 + 120 = 220. La penalización de 20 minutos solo aplica si el problema en cuestión es finalmente aceptado. No hay penalización por soluciones incorrectas de problemas que nunca fueron aceptados.
+
+- Estos son los únicos sitios de Internet que se tiene permitido acceder durante el concurso:
++
+    * https://omegaup.com/arena/TEC_CEM_SEMANA_I_2016/[El sitio del concurso en omegaup.com]
+    * http://rgruet.free.fr/PQR27/PQR2.7.html[Python 2.7 Quick Reference]
+    * link:#[Esta página].
++
+El acceso a cualquier otro sitio, incluyendo _Google_ y _Stack Overflow_, está estrictamente prohibido.
+
+- Durante el concurso no está permitido hablar con personas de otros equipos ni utilizar teléfonos celulares u otros dispositivos.
+
+- Cualquier falta a este reglamento puede provocar desde una amonestación verbal hasta la descalificación del equipo involucrado.
+
+- Cualquier aspecto no tratado aquí será resuelto a criterio de los profesores responsables de este reto.
+
+=== Problema de entrenamiento
+
+Utilicen el _login_ y _password_ de la cuenta provista para su equipo e ingresen a la siguiente liga:
+
+- Problema: https://omegaup.com/arena/problem/MAYOR_DE_DOS[El mayor de dos]
+
+Escriban su solución en Python 2.7 usando el editor de su preferencia (IDLE, Komodo Edit, etc.):
+
+.Archivo: mayor_de_dos.py
+[source, python]
+----
+a = int(raw_input())
+b = int(raw_input())
+if a > b:
+    print a
+else:
+    print b
+----
+
+Creen en su editor los archivos para sus casos de prueba:
+
+.Archivo: 1.in
+----
+3
+5
+----
+
+.Archivo: 2.in
+----
+5
+5
+----
+
+.Archivo: 3.in
+----
+10
+1
+----
+
+Abran una terminal (`cmd.exe` en Windows) y cámbiense al directorio donde están todos sus archivos.
+
+WARNING: Los símbolos `$` y `c:\>` en los siguientes ejemplos son el _prompt_ de la terminal y no deben teclearlos.
+
+.En OS X y Linux
+----
+$ cd /directorio/donde/estan/los/archivos
+----
+
+.En Windows
+----
+c:\> cd \directorio\donde\estan\los\archivos
+----
+
+Ahora corran su programa usando los casos de prueba, verificando que se obtenga la salida esperada.
+
+[WARNING]
+====
+Si al correr el comando `python` desde la terminal aparece algún un error, reemplácenlo por alguno de los siguientes comandos:
+
+- `python2.7` (OS X y Linux)
+- `\Python27\python` (Windows)
+
+Si el problema persiste, probablemente no se instaló correctamente Python 2.7 en la computadora en cuestión.
+====
+
+----
+$ python mayor_de_dos.py < 1.in
+5
+----
+
+----
+$ python mayor_de_dos.py < 2.in
+5
+----
+
+----
+$ python mayor_de_dos.py < 3.in
+10
+----
+
+[NOTE]
+====
+El operador menor que (`<`) usado en la terminal le dice al intérprete de Python que tome el archivo que se indica inmediatamente después y lo use como entrada estándar (en lugar del teclado, que usa por default).
+====
+
+Si consideran que su programa ya funciona de manera correcta, súbanlo al sitio de omegaUp usando la liga que dice “Nuevo envío” en la sección inferior de la página del problema. El juez en línea responderá su veredicto de forma casi inmediata.
+
+=== Liga del concurso
+
+Para iniciar el concurso, vayan a la siguiente liga:
+
+- https://omegaup.com/arena/TEC_CEM_SEMANA_I_2016/
+
+=== Resultados del concurso de programación
+
+El siguiente documento PDF tiene los resultados del concurso de programación celebrado el 26 de septiembre:
+
+- link:resultado_concurso.pdf[resultado_concurso.pdf]
+
+== Framework Dagor
+
+Dagor es un _framework_ de Python que permite programar diversos tipos de jugadores que compiten entre sí para ganar un _juego combinacional_.
+
+NOTE: La palabra Dagor significa “batalla” en el idioma sindarin (conocido también como élfico gris), creado por el escritor británico J. R. R. Tolkien, autor del “Señor de los anillos”.
+
+En teoría de juegos, un _juego combinacional_ tiene las siguientes características:
+
+- Siempre hay dos jugadores que toman turnos para tirar de manera alternada.
+- No hay elementos aleatorios como dados o cartas barajadas.
+- Ambos jugadores tienen información perfecta (no hay información oculta).
+- El juego es finito -- debe terminar eventualmente.
+- Usualmente el último jugador en tirar gana.
+
+Muchas de las ideas de este _framework_ fueron tomadas del sitio https://people.eecs.berkeley.edu/~ddgarcia/teaching/CS3Gamesman/[Gamesman] elaborado por Dan Garcia de UC Berkeley.
+
+=== Descarga
+
+El módulo de `dagor` se puede descargar de la siguiente liga:
+
+- link:dagor.zip[dagor.zip] versión 1.0.2, 28 de septiembre, 2016.
+
+Solo se requiere descomprimir el ZIP y copiar el archivo `dagor.py` al directorio de trabajo.
+
+=== D10 (destino 10)
+
+==== Reglas
+
+*Piezas y tablero:* Este juego se juega en un tablero de 1 por 10. La posición inicial es un tablero vacío.
+
+*Para tirar:* Los jugadores se alternan colocando una o dos piezas en las localidades desocupadas de más a la izquierda del tablero. En este juego no hay distinción respecto a las piezas de cada jugador. Nos referiremos al primer jugador en tirar como izquierda, y al otro jugador como derecha.
+
+*Para ganar:* El primer jugador en colocar la décima pieza en el tablero gana.
+
+==== Ejemplo
+
+----
+Tablero inicial:
+ _ _ _ _ _ _ _ _ _ _
+| | | | | | | | | | |
+| | | | | | | | | | |
+|_|_|_|_|_|_|_|_|_|_|
+ 1 2 3 4 5 6 7 8 9 10
+
+Izquierda tira 2
+ _ _ _ _ _ _ _ _ _ _
+| | | | | | | | | | |
+|*|*| | | | | | | | |
+|_|_|_|_|_|_|_|_|_|_|
+ 1 2 3 4 5 6 7 8 9 10
+
+Derecha tira 2
+ _ _ _ _ _ _ _ _ _ _
+| | | | | | | | | | |
+|*|*|*|*| | | | | | |
+|_|_|_|_|_|_|_|_|_|_|
+ 1 2 3 4 5 6 7 8 9 10
+
+Izquierda tira 2
+ _ _ _ _ _ _ _ _ _ _
+| | | | | | | | | | |
+|*|*|*|*|*|*| | | | |
+|_|_|_|_|_|_|_|_|_|_|
+ 1 2 3 4 5 6 7 8 9 10
+
+Derecha tira 1
+ _ _ _ _ _ _ _ _ _ _
+| | | | | | | | | | |
+|*|*|*|*|*|*|*| | | |
+|_|_|_|_|_|_|_|_|_|_|
+ 1 2 3 4 5 6 7 8 9 10
+
+Izquierda tira 2
+ _ _ _ _ _ _ _ _ _ _
+| | | | | | | | | | |
+|*|*|*|*|*|*|*|*|*| |
+|_|_|_|_|_|_|_|_|_|_|
+ 1 2 3 4 5 6 7 8 9 10
+
+Derecha tira 1
+ _ _ _ _ _ _ _ _ _ _
+| | | | | | | | | | |
+|*|*|*|*|*|*|*|*|*|*|
+|_|_|_|_|_|_|_|_|_|_|
+ 1 2 3 4 5 6 7 8 9 10
+
+Derecha resulta ganador
+----
+
+==== Utilizando Dagor
+
+El siguiente programa permite a un jugador humano jugar contra un jugador estratégico autónomo:
+
+.Archivo: ejemplo1.py
+[source, python]
+----
+# coding: utf-8
+
+from dagor import JuegoD10, JugadorD10Interactivo, JugadorD10Estrategico # <1>
+
+jugador1 = JugadorD10Interactivo('Humano') # <2>
+jugador2 = JugadorD10Estrategico('Máquina') # <3>
+juego = JuegoD10(jugador1, jugador2) # <4>
+juego.inicia() # <5>
+----
+
+<1> Importamos del módulo `dagor` las clases que estaremos utilizando en nuestro programa.
+<2> Creamos un jugador de D10 interactivo.
+<3> Creamos un jugador de D10 estratégico autónomo.
+<4> Creamos un juego de D10 y le enviamos los dos jugadores previamente creados.
+<5> Comenzamos el juego.
+
+Para correrlo, desde la terminal teclear:
+
+----
+$ python ejemplo1.py
+----
+
+==== Clases disponibles
+
+[cols="<1m,<4", options="header"]
+|===
+^| Clase
+^| Descripción
+
+| JuegoD10
+| Clase que representa un juego de D10 (Destino 10).
+
+| JugadorD10
+| Toda clase que represente un jugador del juego D10 debe heredar de esta clase.
+
+| JugadorD10Aleatorio
+| Jugador de D10 que tira de manera aleatoria.
+
+| JugadorD10Estrategico
+| Jugador de D10 que tira con una estrategia.
+
+| JugadorD10Interactivo
+| Jugador de D10 controlado a partir de una interfaz de usuario en modo texto.
+|===
+
+==== Programando un nuevo jugador
+
+Para escribir el código de un nuevo jugador solo se requiere:
+
+1. Definir una clase que herede del tipo de jugador deseado (`JugadorD10` en nuestro caso).
+2. Proporcionar la implementación de los siguientes dos métodos abstractos:
+
+    - `heuristica(self, posicion)`: Función heurística que puede utilizar un jugador para rankear la posición enviada como argumento.
+    - `tira(self, posicion)`: Invocada automáticamente por el objeto controlador del juego para determinar el tiro de este jugador. Debe devolver un tiro válido a partir de la posición enviada como argumento.
+
+El siguiente código muestra un jugador de D10 cuya estrategia es tirar un 1 siempre, excepto si existe un tiro ganador con un 2:
+
+[source, python]
+----
+from dagor import JuegoD10, JugadorD10, JugadorD10Aleatorio
+
+class JugadorD10SiempreTiraUno(JugadorD10): # <1>
+
+    def heuristica(self, posicion):
+        return self.triunfo(posicion) == self.simbolo # <2>
+
+    def tira(self, posicion):
+        posibles = self.posiciones_siguientes(posicion) # <3>
+        for p in posibles: # <4>
+            if self.heuristica(p):
+                return p
+        return posibles[0] # <5>
+
+jugador1 = JugadorD10SiempreTiraUno('OnlyOne')
+jugador2 = JugadorD10Aleatorio('RandomBoy')
+juego = JuegoD10(jugador1, jugador2)
+juego.inicia()
+----
+
+<1> Esta es la manera correcta en Python de definir una clase `JugadorD10SiempreTiraUno` que hereda de otra `JugadorD10`.
+<2> Esta función heurística devuelve `True` si `posicion` resulta en un tiro ganador para este jugador. De otra forma regresa `False`.
+<3> Obtenemos todas todas las posiciones posibles que puede haber en un juego posteriores a `posicion`.
+<4> Busca si en esas posibles posiciones existe un tiro ganador.
+<5> De lo contrario, tira siempre la primera posición, la cual siempre es el tiro con un 1.
+
+==== Sobre `posicion`
+
+La documentación en línea indica la estructura interna que tiene el parámetro `posicion` para los métodos definidos en el ejemplo anterior. Para consultarla, hay que correr el interprete de Python. Desde la línea de comando teclear:
+
+----
+python
+----
+
+En el shell de Python, debemos hacer lo siguiente:
+
+[source, python]
+----
+>>> from dagor import JugadorD10 # <1>
+>>> help(JugadorD10) # <2>
+----
+
+<1> Importamos la clase de la cual heredamos en el ejemplo de arriba.
+<2> Solicitamos la ayuda en línea.
+
+La salida debe ser algo así:
+
+----
+Help on class JugadorD10 in module dagor:
+
+class JugadorD10(Jugador)
+ |  Toda clase que represente un jugador del juego D10
+ |  debe heredar de esta clase.
+ |
+ |  La posición que maneja un juego de D10 es una tupla
+ |  de la siguiente forma:
+ |
+ |      (J, S)
+ |
+ |  En donde:
+ |
+ |      J: turno actual (nombre del jugador que se indicó al
+ |         momento de crearlo)
+ |      S: suma hasta el momento (0 al 10)
+ |
+ |  Por ejemplo:
+ |
+ |      ('Alfa', 5)
+ |
+ |  Esta posición indica que el jugador actual es Alfa y que
+ |  la suma actual es 5.
+----
+
+==== Opciones de `inicia`
+
+El método `inicia` de la clase `Juego` (y sus subclases, como `JuegoD10`) comienza un encuentro entre los dos jugadores provistos al momento en el que se creó el juego. El encuentro tendrá un cierto número de juegos determinado por el valor del parámetro opcional `veces`. Cada jugador tira primero de manera alternada en todos los juegos del encuentro. Si el parámetro opcional `delta_max` tiene un valor mayor a cero arroja la excepción de `TiemploLimiteExcedido` si el tiempo que tarda el tiro de algún jugador excede `delta_max` segundos. Al final despliega un resumen del encuentro si `veces` es mayor a 1.
+
+En el siguiente ejemplo se inicia un encuentro de 10 juegos en donde el tiro de cada jugador debe durar 2 segundos o menos.
+[source, python]
+----
+juego.inicia(veces=10, delta_max=2)
+----
+
+==== Propiedades y funciones de un jugador
+
+Cualquier instancia de las subclases de la clase `Jugador` (incluyendo `JugadorD10` y sus subclases) tienen los siguientes métodos y propiedades:
+
+[cols="1m,2", options="header"]
+|====
+^| Nombre
+^| Descripción
+
+| $$__init__$$(self, nombre)
+| Constructor que inicializa un jugador con `nombre`.
+
+| $$__str__$$(self)
+| Método que convierte este jugador a una cadena de caracteres. El formato usado es: `"nombre (alias simbolo) [clase]"`.
+
+| posiciones_siguientes(self, posicion)
+| Método que devuelve todas todas las posiciones posibles que puede haber en un juego posteriores a `posicion`.
+
+| triunfo(self, posicion)
+| Método que devuelve el símbolo del jugador que resulta ganador a partir de `posicion`, o `None` si no hay un jugador ganador en `posicion`.
+
+| nombre
+| Propiedad con el nombre de este jugador.
+
+| simbolo
+| Propiedad con el símbolo (o nombre si el símbolo no existe) de este jugador.
+
+| contrario
+| Propiedad con la referencia al oponente de este jugador. Útil para obtener el nombre y símbolo del jugador contrario, por ejemplo: `self.contrario.nombre` o `self.contrario.simbolo`.
+|====
+
+=== SuperGato
+
+==== Reglas
+
+*Piezas y tablero:*  Este juego se juega en un tablero rectangular de _n_ renglones por _m_ columnas, donde 3 ≤ _n_ ≤ 10, 3 ≤ _m_ ≤ 10.
+
+*Para tirar:*  De manera similar al juego de gato, los jugadores alternan su turno colocando su símbolo (`X` o `O`) en cualquier localidad vacía del tablero.
+
+*Para ganar:* El jugador que logre colocar su símbolo en tres localidades consecutivas (horizontal o verticalmente) gana. Si nadie ha ganado y el tablero está completamente lleno, entonces es un empate.
+
+==== Clases disponibles
+
+[cols="<1m,<4", options="header"]
+|===
+^| Clase
+^| Descripción
+
+| JuegoSuperGato
+| Clase que representa un juego de SuperGato. Al crear una instancia de esta clase, es necesario indicar el número de renglones y columnas del tablero como tercer y cuarto argumento.
+
+| JugadorSuperGato
+| Toda clase que represente un jugador del juego SuperGato debe heredar de esta clase.
+
+| JugadorSuperGatoAleatorio
+| Jugador de SuperGato que tira de manera aleatoria.
+
+| JugadorSuperGatoEstrategico
+| Jugador de SuperGato que tira con una estrategia.
+
+| JugadorSuperGatoInteractivo
+| Jugador de SuperGato controlado a partir de una interfaz de usuario en modo texto.
+|===
+
+=== Orugas
+
+==== Reglas
+
+*Piezas y tablero:* Este juego se juega en un tablero rectangular de _n_ renglones por _m_ columnas, donde 4 ≤ _n_ ≤ 10, 4 ≤ _m_ ≤ 10. Inicialmente cada jugador ocupa una localidad del tablero (la cabeza de la oruga), determinada de manera aleatoria.
+
+*Para tirar:* Cada jugador controla una oruga que crece rápidamente a partir de su cabeza. Durante el turno de un jugador, éste debe seleccionar una localidad contigua vacía en la que pueda crecer la cabeza de su oruga. La oruga puede crecer hacia la localidad de arriba, abajo, izquierda o derecha, mas no en diagonal. Es posible crecer saliéndose de una orilla del tablero y llegar a su correspondiente localidad opuesta.
+
+*Para ganar:* Un jugador gana cuando su oponente ya no tenga una localidad donde crecer.
+
+En el tablero, el primer jugador usa el símbolo `B` (blanco) como cabeza y `b` para el resto del cuerpo. El segundo jugador usa el símbolo `N` (negro) como cabeza y `n` para el resto del cuerpo.
+
+==== Clases disponibles
+
+[cols="<1m,<4", options="header"]
+|===
+^| Clase
+^| Descripción
+
+| JuegoOrugas
+| Clase que representa un juego de Orugas. Al crear una instancia de esta clase, es necesario indicar el número de renglones y columnas del tablero como tercer y cuarto argumento.
+
+| JugadorOrugas
+| Toda clase que represente un jugador del juego Orugas debe heredar de esta clase.
+
+| JugadorOrugasAleatorio
+| Jugador de Orugas que tira de manera aleatoria.
+
+| JugadorOrugasInteractivo
+| Jugador de Orugas controlado a partir de una interfaz de usuario en modo texto.
+|===
+
+== Proyecto: Jugador estratégico para Orugas
+
+Usando el _framework_ Dagor, diseñen e implementen en Python 2.7 un jugador para el juego de Orugas que produzca tiros usando una o varias estrategias “inteligentes”.
+
+El proyecto se entregará el día jueves 29 de septiembre antes de las 11:00 hrs. Cada equipo debe enviar el archivo con su proyecto a la cuenta del profesor Ariel Ortiz ariel.ortiz@itesm.mx con copia para el profesor Roberto Martínez rmroman@itesm.mx. El _subject_ del correo debe ser: **“Reto IA _xxxxx_”**, donde _xxxxx_ es el nombre de su equipo, todo en minúsculas.
+
+La implementación de cada equipo competirá contra las implementaciones de los demás equipos en un torneo de estrategias cuyas reglas se describen a continuación.
+
+=== Reglas del torneo de estrategias
+
+- Cada equipo entregará su implementación completa contenida en un solo archivo. El nombre del archivo debe ser el mismo que el nombre del equipo, todo con letras minúsculas, y con extensión `.py`. Así mismo, el nombre de la clase que implementa el jugador estratégico debe tener de prefijo `JugadorOrugas` y de sufijo el nombre del equipo con su primer carácter en mayúscula. Por ejemplo, si el equipo se llama `answer42`, la clase correspondiente se debe llamar `JugadorOrugasAnswer42` y debe estar contenida en un archivo llamado `answer42.py`.
++
+La definición de la clase en cuestión debe ser el único código contenido en el archivo a entregar. Además de los métodos `heuristica` y `tira`, se permite añadir a la clase métodos y variables de instancia auxiliares.
+
+- El siguiente código muestra la manera en la que se debe poder utilizar el código elaborado por cada equipo:
++
+.Archivo: answer42_vs_aleatorio.py
+[source, python]
+----
+from dagor import JuegoOrugas, JugadorOrugasAleatorio
+from answer42 import JugadorOrugasAnswer42
+
+juego = JuegoOrugas(
+    JugadorOrugasAnswer42('answer42'),
+    JugadorOrugasAleatorio('RandomBoy'),
+    5, 8)
+juego.inicia(veces=100, delta_max=2)
+----
+
+- La clase desarrollada por cada equipo se enfrentará en un encuentro contra cada una de las clases de los otros equipos.
+
+- Cada encuentro consistirá de 100 juegos. Un equipo recibirá una cierta cantidad de puntos dependiendo del resultado:
++
+    * *3 puntos* si ganó 51 juegos o más.
+    * *1 punto* si ganó exactamente 50 juegos.
+    * *0 puntos* si ganó 49 juegos o menos.
++
+El equipo que junte más puntos obtiene el primer lugar del torneo, el siguiente equipo con más puntos obtiene el segundo lugar, y así sucesivamente. Existe la posibilidad de que ocurran empates.
+
+- El tamaño del tablero del juego será seleccionado por los profesores responsables del reto de manera arbitraria. Dicho tamaño será el mismo para todos los encuentros y se dará a conocer hasta el inicio del torneo.
+
+- Todos los encuentros se correrán desde la línea de comando. Las salidas de dichos encuentros serán almacenadas como archivos de texto y podrán ser consultadas por las partes interesadas.
+
+- Un equipo perderá automáticamente un encuentro en los siguientes casos:
+
+    * Alguno de sus tiros tarda más de 2 segundos en completarse (tiempo medido por la computadora en la que se llevan a cabo los encuentros del torneo).
+    * Si su código produce cualquier tipo de error a tiempo de ejecución, por ejemplo: intentar hacer un tiro en una posición inválida, realizar una división entre cero, usar un índice de arreglo fuera de rango, acceder a un atributo inexistente, etc.
+
+- Un equipo quedará descalificado de todo el torneo en los siguientes casos:
++
+    * Si su código intenta hacer uso de recursos externos al programa: crear/borrar/leer/escribir archivos, crear procesos del sistema operativo, conectarse a Internet, etc.
+    * Si su código contiene lógica mal intencionada que intente interferir con el flujo normal del juego, como por ejemplo: alterar propiedades privadas de cualquier objeto del juego, modificar la semilla del generador de números aleatorios, alterar el comportamiento de los métodos de cualquier clase distinta a la desarrollada por el equipo, etc.
++
+Por favor pregunten a su profesor si tienen alguna duda sobre qué operaciones en su código pudieran provocar que su equipo quede descalificado del torneo.
+
+- Cualquier aspecto no tratado aquí será resuelto a criterio de los profesores responsables de este reto.
+
+=== Resultados del torneo de estrategias
+
+Los siguientes archivos tienen los resultados del torneo de estrategias celebrado el 29 de septiembre:
+
+- link:resultado_torneo.pdf[resultado_torneo.pdf]
+- link:bitacoras_de_juegos.zip[bitacoras_de_juegos.zip] (8 MB)
