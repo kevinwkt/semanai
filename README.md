@@ -5,5 +5,4 @@ For a week my team and I had to develop an aritifical intelligence through the u
 
 The link to DAGOR: https://bitbucket.org/ariel-ortiz/dagor/src
 
-The link to my team KYSERSANT: kysersant.blogspot.mx/2016_09_01_archive.html
-
+The link to my team KYSERSANT: kysersant.blogspot.mx
